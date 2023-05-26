@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Forms</title>
+</head>
+<body>
+    <h1>Survey Forms</h1>
+  <div id="survey-form">
+    <form>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter you name" required>
+      </div>
+      <div class="form-group">
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age" placeholder="Enter your age" required>
+      </div>
+      <div class="form-group">
+        <label for="e-mail">E-mail:</label>
+        <input type="text" id="E-mail" name="E-mail" placeholder="Enter your E-mail" required>
+      </div>
+      <div class="form-group1">
+        <label for="status">Which best option describes you?:</label>
+        <select id="status" name="status" required>
+          <option value="">Enter your status</option>
+          <option value="student">Student</option>
+          <option value="worker">Worker</option>
+          <option value="unemployed">Unemployed</option>
+        </select>
+        </div>
+      <div class="form-group2">
+        <label> Would you recommend this site?:</label>
+        <label for="yes"><input type="radio" id="yes" name="yes[]" value="yes"> Yes</label>
+        <label for="no"><input type="radio" id="no" name="no[]" value="no"> No</label>
+        <label for="maybe"><input type="radio" id="maybe" name="maybe[]" value="maybe"> Maybe</label>
+    </div>
+
+      <div class="form-group3">
+        <label>Language and Frameworks known:</label>
+        <label for="lang-javascript"><input type="checkbox" id="lang-javascript" name="languages[]" value="javascript"> JavaScript</label>
+        <label for="lang-html"><input type="checkbox" id="lang-html" name="languages[]" value="html"> HTML 5</label>
+        <label for="lang-css"><input type="checkbox" id="lang-css" name="languages[]" value="css"> CSS 3</label>
+        <label for="lang-django"><input type="checkbox" id="lang-django" name="languages[]" value="django"> Django</label>
+        <label for="lang-angular"><input type="checkbox" id="lang-angular" name="languages[]" value="angular"> Angular</label>
+      </div>
+      <div class="form-group4">
+        <label for="feedback">Comments and suggestions:</label>
+        <textarea id="feedback" name="feedback" rows="2" placeholder="Enter your comments and suggestions"></textarea>
+      </div>
+      <input type="submit" value="Enviar">
+    </form>
+  </div>
+</body>
+</html>
